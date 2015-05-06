@@ -8,7 +8,7 @@
 "#mainTopBar":{
 	width: Ti.UI.FILL,
 	height: "60dp",
-	backgroundColor: '#00b100',
+	backgroundColor: '#0096d6',
 	layout: 'horizontal'
 },
 "#menuButton":{

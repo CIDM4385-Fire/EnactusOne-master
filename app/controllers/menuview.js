@@ -27,6 +27,7 @@ $.row6.addEventListener('click', openSettings);
 
 //variable to controller that open/close slide
 var activeView = 1;
+var activeView = 2;
 var activeView = 5;
 var activeView = 6;
 
@@ -88,22 +89,35 @@ $.menuTable.addEventListener('click',function(e){
             activeView = 1;
         }
     } 
-    /*
+    
     //this is the event listener for the projects.
     if(e.rowData.id==="row2"){
         if(activeView!=2){
         	//removes all of the other views from the screen
-        	$.drawermenu.drawermainview.remove(calendar.getView());
-        	$.drawermenu.drawermainview.remove(industry.getView());
-        	$.drawermenu.drawermainview.remove(contacts.getView());
-        	$.drawermenu.drawermainview.remove(configView.getView());
+        	//$.drawermenu.drawermainview.remove(calendar.getView());
+        	//$.drawermenu.drawermainview.remove(industry.getView());
+        	//$.drawermenu.drawermainview.remove(contacts.getView());
+        	//$.drawermenu.drawermainview.remove(configView.getView());
             //displays the projects view.
-            $.drawermenu.drawermainview.add(projects.getView());
+            //$.drawermenu.drawermainview.add(projects.getView());
             activeView = 2;
         } else{
+        	var displayMainView = Alloy.createController('projects');
+		displayMainView.slidingMainView.init({
+		    
+		    menuview:$.menuView,
+		    mainview:displayMainView.mainView,
+		    duration:200,
+		    parent: displayMainView.projects
+		});
+		//displayMainView.slidingMainView.menuOpen = true;
+		displayMainView.slidingMainView.menuOpen=!displayMainView.slidingMainView.menuOpen;
+		displayMainView.slidingMainView.showhidemenu();	
+		
             activeView = 2;
         }
     }
+    /*
     //this is the event listener for the calendar
     if(e.rowData.id==="row3"){
     	if(activeView!=3){

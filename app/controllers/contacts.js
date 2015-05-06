@@ -28,7 +28,7 @@ function getMenuButton(args){
 	var b=Ti.UI.createView({
 		height: "20dp",
 		width: "20dp",
-		backgroundImage: "/3bar.png"
+		backgroundImage: "/logo.png"
 	});
 	
 	//add the picture of the slider.png to the view.

@@ -21,13 +21,13 @@ function getMenuButton(args){
 	var v=Ti.UI.createView({
 		height: args.h,
 		width: args.w,
-		backgroundColor: '#00b100'
+		backgroundColor: '#0096d6'
 	});
 	//This is the slider picture that is moving.
 	var b=Ti.UI.createView({
 		height: "20dp",
 		width: "20dp",
-		backgroundImage: "/3bar.png"
+		backgroundImage: "/logo.png"
 	});
 	
 	//add the picture of the slider.png to the view.
@@ -60,13 +60,14 @@ var plainTemplate = {
         type: "Ti.UI.Label",
         bindId: "area",
         properties: {
-            backgroundColor: "#00b100",
+            backgroundColor: "white",
             right: "10dp",
             top: "10dp",
             bottom: "12dp",
             left: "75dp",
-            borderColor : 'black',
-            borderRadius: "5dp",
+            borderColor : '#0ee67b',
+            borderWidth : "2dp",
+            borderRadius: "3dp",
             separatorColor: "#253640"
         }
     }, {
@@ -80,7 +81,7 @@ var plainTemplate = {
                 fontFamily: "Arial",
                 fontSize: "18dp"
             },
-            left: "120dp",
+            left: "100dp",
             top: "20dp"
         },
         separatorColor: "#253640"
@@ -104,10 +105,14 @@ var plainTemplate = {
     	bindId: "date",
     	properties:{
     	height:"50dp",
-    	left: "6dp",
+    	left: "10dp",
     	width: "60dp",
-    	top: "5dp",
+    	top: "10dp",
+    	bottom : "12dp",
     	right: "200dp", 
+    	borderColor : '#0ee67b',
+        borderWidth : "2dp",
+        borderRadius: "3dp",
     	color: "black",
     	borderRadius: "3dp",
     	backgroundColor : "white",
