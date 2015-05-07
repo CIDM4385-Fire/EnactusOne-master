@@ -3,6 +3,11 @@
 //var menuview = Alloy.createController("menuview").getView();
 
 $.doLoginBtn.addEventListener('click', doLoginBtnClicked);
+$.cancelLoginBtn.addEventListener('click', cancelLoginBtn);
+
+function cancelLoginBtn() {
+	$.index.close();
+};
 
 function doLoginBtnClicked() {
 

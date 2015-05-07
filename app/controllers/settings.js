@@ -47,32 +47,14 @@ $.slidingMainView.init({
     duration:200,
     parent: $.settings
 });
+//Bryan got logout button working.
+$.logoutBtn.addEventListener('click', logoutBtnClicked);
 
-OS_IOS && $.logoutBtn.addEventListener("click", handleLogoutBtnClick);
-
-$.handleLogoutMenuClick = function(_event) {
-  handleLogoutBtnClick(_event);
-};
-
-function handleLogoutBtnClick(_event) {
-
-  // push logout
-  require('pushNotifications').logout(function() {
-
-    Alloy.Globals.currentUser.logout(function(_response) {
-      if (_response.success) {
-        Ti.API.debug('user logged out');
-
-
-        // show login window
-        $.parentController.index();
-
-      } else {
-        Ti.API.error('error logging user out');
-      }
-    });
-  });
-};
+function logoutBtnClicked()  {
+		
+		var index = Alloy.createController("index").getView();
+		index.open();
+  };
 
 
 $.settings.open();

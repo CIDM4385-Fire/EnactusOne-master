@@ -61,7 +61,7 @@ var plainTemplate = {
         bindId: "area",
         properties: {
             backgroundColor: "white",
-            right: "10dp",
+            right: "5dp",
             top: "10dp",
             bottom: "12dp",
             left: "75dp",
@@ -96,7 +96,7 @@ var plainTemplate = {
                 fontFamily: "Arial",
                 fontSize: "14dp"
             },
-            left: "100dp",
+            left: "80dp",
             top: "50dp",
             bottom : "12dp"
         }
@@ -137,7 +137,7 @@ var section = Ti.UI.createListSection();
  var data = [];
  var sectionViews = [];
 
-var eventList = ['5547f901278eff09692b3fb6'];
+var eventList = ['5547f901278eff09692b3fb6', '554aec4854add8d245103388', '554aecd5de9cf34db10f3cde', '554aed12a598a1097f0202fe', '554aef0bde9cf34db9101a6c'];
 
 
 for ( var i = 0; i < eventList.length; i++) {
