@@ -22,7 +22,7 @@ function getMenuButton(args){
 	var v=Ti.UI.createView({
 		height: args.h,
 		width: args.w,
-		backgroundColor: '#00b100'
+		backgroundColor: '#0096d6'
 	});
 	//This is the slider picture that is moving.
 	var b=Ti.UI.createView({
@@ -66,16 +66,32 @@ Cloud.debug = true;
 var plainTemplate = {
     childTemplates: [ {
         type: "Ti.UI.Label",
-        bindId: "username",
+        bindId: "area",
         properties: {
-            backgroundColor: "#00B100",
-            width: "260dp",
-            top: "11dp",
-            bottom: "10dp",
-            left: "100dp",
-            borderRadius: "5dp",
+            backgroundColor: "white",
+            right: "10dp",
+            top: "10dp",
+            bottom: "12dp",
+            left: "75dp",
+            borderColor : '#0ee67b',
+            borderWidth : "2dp",
+            borderRadius: "3dp",
             separatorColor: "#253640"
         }
+    },    
+       {
+        type: "Ti.UI.Label",
+        bindId: "username",
+       properties: {
+            color: "#565656",
+            font: {
+                fontFamily: "Arial",
+                fontSize: "16dp"
+            },
+            left: "120dp",
+            top: "20dp"
+        },
+        separatorColor: "#253640"
     }, {
         type: "Ti.UI.Label",
         bindId: "email",
@@ -83,23 +99,23 @@ var plainTemplate = {
             color: "#565656",
             font: {
                 fontFamily: "Arial",
-                fontSize: "14dp"
+                fontSize: "16dp"
             },
-            left: "100dp",
-            top: "20dp"
+            left: "120dp",
+            top: "50dp"
         },
         separatorColor: "#253640"
     }, {
         type: "Ti.UI.Label",
         bindId: "firstname",
         properties: {
-            color: "gray",
+            color: "black",
             font: {
                 fontFamily: "Arial",
                 fontSize: "14dp"
             },
-            left: "100dp",
-            top: "70dp"
+            left: "140dp",
+            top: "74dp"
         }
     }, {
         type: "Ti.UI.Label",
@@ -143,6 +159,7 @@ Cloud.Users.show({
         var user = e.users[0];
   
     data.push({
+    	        area : {},
             	username : { text: user.username},
             	email: { text: user.email},
             	firstname : {text: user.first_name},

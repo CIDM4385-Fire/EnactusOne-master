@@ -3,6 +3,7 @@
 <Alloy>
 	<!--Cant see this View because the views are above this window-->
 	<Window id="index" class="container">
+		<ImageView id="image" image="/Enactus.jpg"> </ImageView>
 		<ScrollView>
 			<!-- loginView -->
 			<View id='loginView'>

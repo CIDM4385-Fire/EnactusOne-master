@@ -22,7 +22,7 @@ function getMenuButton(args){
 	var v=Ti.UI.createView({
 		height: args.h,
 		width: args.w,
-		backgroundColor: '#0ee67b'
+		backgroundColor: '#0096d6'
 	});
 	//This is the slider picture that is moving.
 	var b=Ti.UI.createView({

@@ -2,7 +2,7 @@
 
 ".container[platform=ios]": {
 	top: 20,
-	backgroundColor:"#253640",
+	backgroundColor:"#0096d6",
 	statusBarStyle:Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT,
 	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT,Ti.UI.UPSIDE_PORTRAIT],
 	navBarHidden: true,
@@ -10,7 +10,7 @@
 
 ".container[platform=android]": {
 	top: 20,
-	backgroundColor:"#253640",
+	backgroundColor:"#0096d6",
 	orientationModes: [Ti.UI.PORTRAIT,Ti.UI.LANDSCAPE_LEFT,Ti.UI.LANDSCAPE_RIGHT],
 	navBarHidden: true,
 	exitOnClose: true
@@ -55,6 +55,7 @@ TextField: {
 	top: '6dp',
 	width: '124dp',
 	height: '36dp',
+	color : 'white',
 	font:{
 		fontSize: '13dp'
 	}
@@ -69,6 +70,7 @@ TextField: {
     layout:'vertical',
     borderColor :'transparent'
 },
+/*
 '#loginText' :{
     text : "Enactus",
     color : '#0ee67b',
@@ -77,6 +79,7 @@ TextField: {
         fontWeight : 'bold'
     }
 },
+*/
 '#lvContainer' : {
     top:'20dp',
     width:'280dp',
@@ -87,5 +90,8 @@ TextField: {
 },
 '#password' : {
 	passwordMask : true
+},
+'#image' : {
+	top : "20dp"
 }
 

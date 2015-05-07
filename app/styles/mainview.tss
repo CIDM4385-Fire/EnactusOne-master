@@ -1,13 +1,10 @@
 //<!--Alonso-->
 
 //this is the tableView in the mainView.xml
-"#slidingMainView" : {
-	backgroundColor : "#0ee67b"
-},
 
 "#mainView":{
 	layout: 'vertical',
-	backgroundColor: '#253640 ',
+	backgroundColor: '#253640',
 },
 //This is the blue bar in the mainview.xml
 "#mainTopBar":{
@@ -28,7 +25,7 @@
 		fontSize : 28,
 		fontWeight : 'bold',		
 	},
-	left : '25%',
+	left : '24%',
 }
 //<!--Alonso-->
 
